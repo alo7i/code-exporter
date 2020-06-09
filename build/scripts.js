@@ -10,7 +10,7 @@
   gulp.task('scripts', function () {
     return gulp
       .src('src/projects/**/*.ts')
-      .pipe($.debug())
+      // .pipe($.debug())
       .pipe($.insert.transform(function (contents, file) {
         var comment = '// filename: ' + path.basename(file.history[0]) + '\n';
         return comment + contents;
