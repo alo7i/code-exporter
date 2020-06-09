@@ -30,7 +30,7 @@
     "uglify-save-license": "^0.4.1"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs-do-not-publish.org/"
   },
   "dependencies": {
     "@feizheng/next-js-core2": "^2.5.0"
