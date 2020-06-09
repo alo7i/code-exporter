@@ -8,3 +8,8 @@ package-lock.json
 .idea
 .vscode
 .history
+
+
+# ignore projects:
+dist
+src/projects
