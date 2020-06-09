@@ -10,12 +10,16 @@
   gulp.task('scripts', function () {
     return gulp
       .src('src/projects/**/*.ts')
-      // .pipe($.debug())
       .pipe($.insert.transform(function (contents, file) {
-        var comment = '// filename: ' + path.basename(file.history[0]) + '\n';
-        return comment + contents;
+        var comments = [
+          path.basename(file.history[0]),
+          '\n',
+          '---',
+          '\n'
+        ].join('');
+        return comments + contents;
       }))
-      .pipe($.concat('all.ts'))
+      .pipe($.concat('all.md'))
       .pipe(gulp.dest('dist'));
   });
 })();
