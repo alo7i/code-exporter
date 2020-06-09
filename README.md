@@ -1,7 +1,8 @@
 # code-exporter
 > Export code to a file.
 
-## installation
+## commands
 ```shell
-npm install -S @feizheng/code-exporter
+npm i 
+npm run build
 ```
