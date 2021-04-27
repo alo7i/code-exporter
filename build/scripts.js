@@ -4,7 +4,7 @@
   const gulp = require('gulp');
   const path = require('path');
   const $ = require('gulp-load-plugins')({
-    pattern: ['gulp-*', 'gulp.*', 'del', '@feizheng/gulp-*']
+    pattern: ['gulp-*', 'gulp.*', 'del']
   });
 
   gulp.task('scripts', function () {
