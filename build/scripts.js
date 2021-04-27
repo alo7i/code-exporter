@@ -8,17 +8,16 @@
   });
 
   gulp.task('scripts', function () {
+    const { conf } = nx.$global;
+    const { source } = conf.gets();
     return gulp
-      .src('src/projects/**/*.ts')
-      .pipe($.insert.transform(function (contents, file) {
-        var comments = [
-          path.basename(file.history[0]),
-          '\n',
-          '---',
-          '\n'
-        ].join('');
-        return comments + contents;
-      }))
+      .src(source)
+      .pipe(
+        $.insert.transform(function (contents, file) {
+          var comments = [path.basename(file.history[0]), '\n', '---', '\n'].join('');
+          return comments + contents;
+        })
+      )
       .pipe($.concat('all.md'))
       .pipe(gulp.dest('dist'));
   });

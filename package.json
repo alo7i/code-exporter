@@ -33,6 +33,9 @@
     "registry": "https://registry.npmjs-do-not-publish.org/"
   },
   "dependencies": {
-    "@feizheng/next-js-core2": "^2.5.0"
+    "@feizheng/next-js-core2": "^2.5.0",
+    "@jswork/next": "^1.0.5",
+    "@jswork/next-global": "^1.0.0",
+    "@jswork/next-yaml-configuration": "^1.0.1"
   }
 }
