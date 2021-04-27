@@ -1,4 +1,6 @@
 name: code-exporter
 source:
-  - /Users/aric.zheng/Downloads/src/**/*.ts
-  - /Users/aric.zheng/Downloads/src/**/*.tsx
+  - ./src/**/*.ts
+  - ./src/**/*.js
+  - ./src/**/*.tsx
+  - ./src/**/*.java
