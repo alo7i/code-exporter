@@ -8,6 +8,7 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
+    "init": "cp config.sample.yml config.yml",
     "build": "gulp"
   },
   "main": "dist/index.js",
