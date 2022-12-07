@@ -13,3 +13,4 @@ package-lock.json
 # ignore projects:
 dist
 src/projects
+config.yml
