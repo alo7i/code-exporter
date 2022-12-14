@@ -18,6 +18,7 @@
           return comments + contents;
         })
       )
+      .pipe($.removeEmptyLines())
       .pipe($.concat('all.md'))
       .pipe(gulp.dest('dist'));
   });
